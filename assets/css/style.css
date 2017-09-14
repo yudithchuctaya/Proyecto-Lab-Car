@@ -146,6 +146,13 @@ div #map{
      font-size: 15px;
      border-radius: 10px;
 }
+#seccion-3 img {
+	
+     color: white;
+     background: transparent;
+     margin-left: 20%;
+}
+
 #seccion-3 button {
 	border-radius: 8px;
 }
