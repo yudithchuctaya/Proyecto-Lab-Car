@@ -6,7 +6,7 @@ army green: 41521F;
 	padding: 0;
 	margin: 0;
 	font-family: 'Merriweather Sans', sans-serif;
-	/*outline: 2px solid red;*/
+	outline: 2px solid red;
 }
 header{
    
@@ -30,14 +30,14 @@ nav.navbar {
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
+    color: #fff;
    
 
 }
 #caja{
-	width: 100%;
-    height: 300px;
+	
 	background: #f7b617;
-	margin-left: 60%;
+	left: 50%;
 	
 }
 input{
@@ -47,10 +47,6 @@ input{
         background: transparent;
 }
 
-.text-crem{
-	color: #f4f0bb;
-	left: 200%;
-}
 
 
 
@@ -72,18 +68,18 @@ input{
   text-align: center;
 }
 #borde{
-	border-color: 2px  white solid ;
-	border-style: solid;
+	outline:3px solid  #fff;
+	margin-left: 1px;
 	margin-top: 7%;
 	font-size: 15px;
 }
 
 
-/*================================================TERCERA SECCION*/
+/*================================================SEGUNDA SECCION*/
 
 #seccion-2 { 
     width: 100%;
-	height: 90vh;
+	height: 100vh;
 	background-image: url(../img/conduce.jpg);
 	background-repeat: no-repeat;
     background-size: cover;
@@ -93,49 +89,63 @@ input{
 	color: #f4f0bb;
     text-align:center;
     margin-top: 60px;
+    font-size: 20px;
 }
 #fondo-oscuro{
-	height: 80px;
+	
 	background:rgba(0,0,3,0.8);
 	height:100vh;
 	text-align: center;
 	color: #fff;
+	overflow: auto;
 	
 }
-#seccion-2 .container{
-	margin-left: 65%;
+#fondo-oscuro{
+left: 80%;
 }
+
+
 #seccion-2 button{
 	background: #f7b617;
 	color: #fff;
+	padding: 15px 10px;
+	border-radius: 10px;
+	font-size: 20px;
 }
-/*================================================CUARTA SECCION*/
+/*================================================TERCERA SECCION*/
 
 #seccion-3{
 	width: 100%;
-	height: 80px;
-    background: #f4f0bb;
+	height: 470px;
+    background: #f7b617;
     text-align: center;
 }
-#seccion-3 p {
-	color: #da2c38;
-	text-align: center;
+#seccion-3 .row{
+	margin-top: 3%;
 }
-#seccion-3 h1 {
-	color: #da2c38;
-	text-align: center;
+div #map{
+    width: 100%;
+    height: 400px;
+    padding: 4px;
+    margin-color: 10px white;
+    outline:  4px solid white;
+    
+
 }
-.glyphicon {
-	margin-top: 30px;
-	font-size: 80px;
-	color: #da2c38;
+#seccion-3 p{
+	color: #fff;
 }
-.icon{
-		font-size: 90px;
-		background-position: center;
-		color: #da2c38;
-		margin-top: 5px;
+#seccion-3 input {
+	 padding: 20px 30px;
+     color: white;
+     background: transparent;
+     font-size: 15px;
+     border-radius: 10px;
 }
+#seccion-3 button {
+	border-radius: 8px;
+}
+ 
 
 /*================================================CUARTA SECCION*/
 footer{
@@ -146,6 +156,13 @@ footer{
 
 }
 
+@media (max-width: 980px) {
+  #seccion-1 .texto-oculto{
+            display: none !important;
+            
+      }
+
+}
 
 
 
