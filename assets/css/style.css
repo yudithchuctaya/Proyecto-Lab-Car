@@ -35,9 +35,10 @@ nav.navbar {
 
 }
 #caja{
-	
+	width: 60%;
+	height: 300px;
 	background: #f7b617;
-	left: 50%;
+	left: 44%;
 	
 }
 input{
