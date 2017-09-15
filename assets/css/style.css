@@ -38,7 +38,8 @@ nav.navbar {
 	width: 58%;
 	height: 300px;
 	background: #f7b617;
-	left: 46%;
+	left: 45%;
+	overflow: hidden;
 	
 }
 
@@ -56,9 +57,10 @@ input{
 
 #seccion-1{
 	width: 100%;
-	height: 550px;
+	height: 560px;
 	margin-top: 20%;
 	background: #f7b617;
+	overflow: hidden;
 } 
 
 #seccion-1 h1{
@@ -81,11 +83,12 @@ input{
 
 #seccion-2 { 
     width: 100%;
-	height: 100vh;
+	height: 80vh;
 	background-image: url(../img/conduce.jpg);
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
+    overflow: hidden;
 }
 #seccion-2 h1,p{
 	color: #f4f0bb;
@@ -96,14 +99,14 @@ input{
 #fondo-oscuro{
 	
 	background:rgba(0,0,3,0.8);
-	height:100vh;
+	height:80vh;
 	text-align: center;
 	color: #fff;
-	overflow: auto;
+	text-overflow: hidden;
+	float: right;
+	position: absolute;
+	margin-left: 151%;
 	
-}
-#fondo-oscuro{
-left: 80%;
 }
 
 
@@ -121,6 +124,7 @@ left: 80%;
 	height: 470px;
     background: #f7b617;
     text-align: center;
+    overflow: hidden;
 }
 #seccion-3 .row{
 	margin-top: 3%;
@@ -164,10 +168,11 @@ div #map{
  
 
 /*================================================CUARTA SECCION*/
-#footer{
+footer{
 	width: 100%;
-	height: 300px;
+	height: 440px;
 	background:#2b2b2b; 
+	overflow: hidden;
 }
 
 #footer .text{
