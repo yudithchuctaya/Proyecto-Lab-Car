@@ -5,11 +5,12 @@
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Proyecto</title>         
+    <title>Proyecto</title>  
+    <link rel="stylesheet" href="assets/css/animate.css">       
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="assets/iconos/style.css">
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -61,14 +62,14 @@
 						  	  Eres dueño de tu tiempo</h4>
 						  	  <p class="hidden-xs">Viaja con <strong>Lab< ar </strong></p>
 						  	  <h6 class="hidden-xs">REGISTRATE</h6><br>
-						  	  <h1 class="visible-xs">Comienza a <br> viajar con <br><strong>Lab< ar </strong></h1>
+						  	  <h1 class="visible-xs">Comienza a viajar con <br><strong>Lab< ar </strong></h1>
 						  	  <form class="form-in line">
 								  <div class="form-group hidden-xs">
 								    
 								  <input  id="first_name" type="text" class="validate"><span class="hidden-xs">O bién</span>
 								   
                                   <input  id="first_name" type="text" class="validate">
-								  </div>  <br><br>
+								  </div>  <br>
 								  <button type="submit" class="btn btn-default hidden-xs">Conviértete en un conductor</button>
 								  <button type="submit" class="btn btn-default visible-xs">Descarga el App</button>
 
@@ -93,28 +94,28 @@
   <section id="seccion-1" >
 	  <div class="container-fluid">
 	  	
-	  	   <div class="row">
+	  	   <div class="row ">
 	  	    <div id="borde" class="  col-sm-9  col-sm-offset-1 col-md-9  col-md-offset-1 col-xs-10  ">
 		  	  
 			  	    
-			  	     	<div class="col-md-7 col-xs-12 ">
-			  	     	<h3 class="visible-xs">La nueva App</h3>
+			  	     	<div class="col-md-7 col-xs-12">
+			  	     	<h3 class="option animate pulse">La nueva App</h3>
 				  	      <img src="assets/img/celular.png" class="img-responsive">
 				  	   </div>
 
 			  	       <div  id="texto" class="col-md-5 col-xs-10">
-			  	   		<h1 class="hidden-xs">Descarga la nueva app</h1>
-			  	   		<h3 class="visible-xs">Llega a tu destino aún mas Rapido</h3>
+			  	   		<h1 class="hidden-xs option animate pulse">Descarga la nueva app</h1>
+			  	   		
 					  	<p class="texto-oculto">
 					  		La version actualizada  de LabCar esta llena de  nuevas funciones para llegar a  donde quieras aun  as facil y rapido. <br><br>
 					  		Con solo tocar un boton un auto llega justo a tu Ubicacion .Subete y no te preocupes :tu conductor sabe exactamente donde ir.
 					    </p>
 					
-		  	           </div>
-		  	   
-		  	   			  
+		  	           </div>	  
 			  </div>
+
 		   </div>
+		   <h3 class="visible-xs">Llega a tu destino aún mas Rapido</h3>
 	  </div>
 
   </section>
@@ -122,12 +123,28 @@
 
   <section id="seccion-2">
 		  
-	
-		  	
-	   <div class="container" > 
-		  <div class="row">
-		       <div class="col-md-5 col-sm-5  col-xs-12 col-lg-6" >
-			       <div id="fondo-oscuro">
+	 
+	   		 <div class="row hidden-xs">
+	   		     <div id="fondo-oscuro1">
+
+		          <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+			       
+			       <br><br><br>
+			       
+			       	<h3><strong>Conduce cuando quieras</strong></h3><br>
+			       	<p class="text-img">LabCar es una opcion flexible <br>para alcnzar tus metas finacieros</p><br>
+			       	<button type="submit" class="btn btn-default">Conviértete en un conductor</button>
+			       	
+			       </div>
+			  	
+			  </div>
+
+		 </div>
+		  <div class="row visible-xs">
+	   		     <div id="fondo-oscuro2">
+
+		          <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+			       
 			       <br><br><br>
 			       
 			       	<h3><strong>Conduce cuando quieras</strong></h3><br>
@@ -139,7 +156,6 @@
 			  </div>
 
 		 </div>
-	</div>
   </section>
 
  <section id="seccion-3">
@@ -150,25 +166,25 @@
 				 		    <h2>Tarifas</h2>
 				 		    <p>Consulta las tarifas LabCar aquí</p>
 						         
-							  <div class="form-group has-success has-feedback">
-							    <div class="input-group">
-							  
-							      <input type="text" class="form-control" placeholder="Ingrese su punto de partida" aria-describedby="inputGroupSuccess3Status">
+							  <div class="has-success has-feedback">
+							    <div class="form-group">
+							     
+							      <input type="text" class="form-control" id="punto-partida" placeholder="Ingrese su punto de partida" aria-describedby="inputGroupSuccess3Status">
 							    </div>
 							    <br><br>
 
-							    <div class="input-group">
-							    
-							      <input type="text" class="form-control"  placeholder=" Ingrese su destino" aria-describedby="inputGroupSuccess3Status">
+							    <div class="form-group">
+							      
+							      <input type="text" class="form-control" id="punto-destino"  placeholder=" Ingrese su destino" aria-describedby="inputGroupSuccess3Status">
 							    </div>
-							  </div>
+							  </div> <br> 		<br>
+							  <div>
 							  <button  type="submit" class="btn btn-default" id="trazar-ruta">¡TRAZAR RUTA!</button>
 							  <button  type="submit" class="btn btn-default" id="encuentrame">UBICACION</button>
-
+                              </div>
+                              <div class="tarifa-resultado" id="tarifaResultado"></div>
 				        </div>
-		           
-
-					   <div class="col-md-7">
+					   <div class="col-md-7 hidden-xs">
 
 					         <div id="map">    </div>
 					   	
@@ -187,32 +203,22 @@
 <section id="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
 			            <br><br><br>
-						<div class="col-md-12">
+						<div class="col-md-12 col-xs-12">
 							<img src="assets/img/logo-blanco.png" alt="">
 
 				          <hr>
 						</div>
-						<div class="col-md-3 text icon hidden-xs" >
-							<span class="icon-facebook">
-			                
-			                </span>
-			                <span class="icon-twitter">
-			                
-			                </span>
-			                 <span class="icon-linkedin2">
-			                
-			                </span>
-			                <span class="icon-appleinc">
-			                
-			                </span>
-			               
-			                 <span class="icon-play3">
-			                
-			                </span>
+						<div class="col-md-3 col-xs-3 text icon hidden-xs" >
+							<span class="icon-facebook "></span>
+			                <span class="icon-twitter"></span>
+			                 <span class="icon-linkedin2"></span>
+			                <span class="icon-appleinc"></span>
+			                <span class="icon-play3"></span>
 						</div>
-						<div class="col-md-3 text hidden-xs">
+						<div class="col-md-3 col-xs-3 text">
+						<br><br>
 							Viaja <br>
 							Conduce <br>
 							Ciudades <br>
@@ -220,10 +226,11 @@
 							Entregas <br>
 							Cómo funciona? <br>
 							Paises <br>
-							Seguridad <br>
+							Seguridad <br><br>
 
 						</div>
-						<div class="col-md-3 text">
+						<div class="col-md-3 col-xs-3 text hidden-xs">
+						<br><br>
 							Oportunidades <br>
 							Nuestra historia <br>
 							API de LabCar <br>
@@ -231,14 +238,22 @@
 							Desarrolladores <br>
 							Servicios <br>
 							Laboratoria <br>
-							Coders 	<br>
+							Coders 	<br><br>
+						</div><br><br>
+						<div class="text icon2 visible-xs">
+
+								<span class="icon-facebook"></span>
+				                <span class="icon-twitter"></span>
+				                 <span class="icon-linkedin2"></span>
+				                <span class="icon-appleinc"></span>
+				                <span class="icon-play3"></span>
 						</div>
-						<div class="col-md-3">
-							<img  class="app" src="assets/img/app-store.png" alt=""> <br><br>
-							<img  class="app" src="assets/img/google-play.png" alt="">
+						<div  class="col-md-2 col-xs-4 text icon2 img-responsive">
+							<img  class="img-responsive app" src="assets/img/app-store.png" alt=""> 
+							<img  class="img-responsive app" src="assets/img/google-play.png" alt="">
 							
 						</div> 
-						<div class="col-md-12">
+						<div class="col-md-12 col-xs-12">
 						<hr>
 						<p class="text"> @2017 LabCar Tecnologies Inc.</p>
 							

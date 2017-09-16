@@ -35,7 +35,7 @@
     var funcionError = function(error){
       alert("Tenemos un problema con encontrar tu ubicación")
        }
-   }
+   
 
 
 
@@ -49,25 +49,41 @@
 	 var inputDestino = document.getElementById("punto-destino");
 	 new google.maps.places.Autocomplete(inputPartida);
 	 new google.maps.places.Autocomplete(inputDestino);
+
+   // direccion
 	 var directionsService = new google.maps.DirectionsService;
      var directionsService = new google.maps.DirectionsRenderer;
 
-    var calculateAndDisplayRoute = function(directionsService,directionsDisplay){
-    directionsService.route({
-    	  original:inputPartida.value,
-    	  destination:inputDestino.value,
-    	  travelModel:"DRIVING"
-    }, function(responsive ,status){
-    	if(status==="OK"){
-    		directionsDisplay.setDirections(response);
-    	} else {
-    			window.alert("No encontrar una  ruta.")
-    	}
-    });
-   }
-   directionsDisplay.setMap(map);
-   var trazarRuta=function(){
-   	calculateAndDisplayRoute(directionsService,directionsDisplay);
+    var calculateRoute = function(directionsService, directionsDisplay){
+      directionsService.route({
+        origin: inputPartida.value,
+        destination: inputDestino.value,
+        travelMode: 'DRIVING'
+      }, function(response, status){
+            if(status ==='OK'){
+              var km = Number((response.routes[0].legs[0].distance.text.replace("km","")).replace(",","."));
+              tarifa.classList.remove("hidden");
+              var costo = km * 1.75;
+              if(costo < 4){
+                tarifa.innerHTML = "S/. 4";
+              }else{
+                tarifa.innerHTML = "S/." + parseInt(costo);
+              }
+              if(miUbicacion!==undefined){
+                miUbicacion.setMap(null);
+              }
+              directionsDisplay.setDirections(response);
+            }else{
+              window.alert("No encontramos una ruta.");
+            }
+      });
+    }
 
-   };
-   document.getElementById("trazar-ruta").addEventListener("click",trazarRuta);
+    directionsDisplay.setMap(map);
+    var trazarRuta = function(e){
+      // e.preventDefault();
+      calculateRoute(directionsService,directionsDisplay);
+    };
+     document.getElementById("trazar-ruta").addEventListener("click",trazarRuta)
+};
+var tarifa = document.getElementById("tarifaResultado")
